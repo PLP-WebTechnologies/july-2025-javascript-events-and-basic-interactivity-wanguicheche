@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page - Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <h1 class="site-title">Week 6 - Interactive Demo</h1>
+        </div>
+        <div class="dark-mode-toggle">
+            <button id="mode-toggle-btn">Toggle Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <h2>Week 6 Assignment</h2>
+        <p>The assignment entails using JavaScript to bring the page to life. It includes examples of event handling, interactive elements, and form validation.</p>
+
+        <hr>
+
+        <section class="interactive-elements">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">What is DOM manipulation?</h3>
+                    <p class="faq-answer">DOM stands for Document Object Model. It's a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. When we use JavaScript to change an element's text or style, we're manipulating the DOM!</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How do event listeners work?</h3>
+                    <p class="faq-answer">Event listeners "listen" for a specific event to happen on an element, like a button click or a mouse hovering over an image. When the event occurs, the listener "hears" it and executes a function you've defined to handle that event. It's how we make a page respond to user actions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Why is form validation important?</h3>
+                    <p class="faq-answer">Form validation is crucial for a good user experience and for data integrity. It ensures that the data a user enters into a form is correct and complete before it's submitted. This prevents bad data from reaching your database and gives the user immediate, helpful feedback.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="form-section">
+            <h2>User Registration</h2>
+            <p>Please fill out the form below. The form will be validated by our custom JavaScript code.</p>
+            
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+                
+                <button type="submit">Register</button>
+                <div class="success-message" id="success-msg"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
